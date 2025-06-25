@@ -1,0 +1,10 @@
+global:
+  resolve_timeout: 1m
+
+route:
+  receiver: 'ansible-webhook'
+
+receivers:
+  - name: 'ansible-webhook'
+    webhook_configs:
+      - url: 'http://192.168.138.21:5001/alert'

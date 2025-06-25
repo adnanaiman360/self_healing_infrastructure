@@ -1,0 +1,5 @@
+---
+- hosts: localhost
+  tasks:
+    - name: Restart NGINX
+      shell: docker restart nginx-demo
